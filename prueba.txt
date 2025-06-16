@@ -1,0 +1,29 @@
+#clinica(diego Castillo)
+
+try:
+  
+    CaPacientes = 0
+    
+    EdPacientes = 0
+    PMayor = 60
+    Pmenor = 59
+   
+    print("__________________________________________")
+    print("1.Registrar Pacientes")
+    print("2.Salir")
+    op = int(input("Eliga Una opcion: "))
+    for i in range(1,4):
+        if op == 1 :
+            CaPacientes = int(input("1.Ingrese la cantidad de Pacientes: "))
+            NomPacientes = input("2.Ingrese el nombre del paciente: ")
+            EdPacientes = int(input("3.Ingrese la edad del paciente: "))
+            print("______________________________________________________________")
+        elif op == 2 :
+            print("Que tenga buen dia!!!")
+            break
+    
+    else:
+        CaPacientes < PMayor == print(f"Se registraron {CaPacientes} pacientes mayores de 60 años.")
+        CaPacientes <= PMayor == print(f"Se registraron {CaPacientes} pacientes de 60 años o menos.")
+except ValueError:
+    print("error")
